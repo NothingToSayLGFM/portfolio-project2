@@ -4,9 +4,10 @@
       <div class="main-slider">
         <slick ref="slick" :options="slickOptions">
           <div class="slide">
-            <h2
-              class="slide-title"
-            >Get Access to Unlimited Educational Resources. Everywhere, Everytime!</h2>
+            <h2 class="slide-title">
+              Get Access to Unlimited Educational Resources. Everywhere,
+              Everytime!
+            </h2>
             <p class="slide-text">
               premium access to more than 10,000 resources ranging from courses,
               events e.t.c.
@@ -14,9 +15,10 @@
             <b-button class="orange-button">Get Access</b-button>
           </div>
           <div class="slide">
-            <h2
-              class="slide-title"
-            >Get Access to Unlimited Educational Resources. Everywhere, Everytime!</h2>
+            <h2 class="slide-title">
+              Get Access to Unlimited Educational Resources. Everywhere,
+              Everytime!
+            </h2>
             <p class="slide-text">
               premium access to more than 10,000 resources ranging from courses,
               events e.t.c.
@@ -84,9 +86,6 @@
       <div class="slider-icon">
         <b-img :src="sliderIcon"></b-img>
       </div>
-      <div class="slider-landing-man-image">
-        <b-img :src="manImage"></b-img>
-      </div>
     </div>
   </b-container>
 </template>
@@ -94,11 +93,10 @@
 <script>
 import Slick from "vue-slick";
 import sliderIcon from "../../assets/img/sliderIcon.png";
-import manImage from "../../assets/img/morgan.png";
 export default {
   name: "HeroLanding",
   components: {
-    Slick
+    Slick,
   },
   data: () => ({
     slickOptions: {
@@ -106,10 +104,9 @@ export default {
       arrows: false,
       fade: true,
       autoplay: true,
-      autoplaySpeed: 5000
+      autoplaySpeed: 5000,
     },
     sliderIcon,
-    manImage
   }),
   methods: {
     next() {
@@ -117,13 +114,13 @@ export default {
     },
     prev() {
       this.$refs.slick.prev();
-    }
+    },
     // reInit() { // AWAIT FOR API
     //
     //     this.$nextTick(() => {
     //         this.$refs.slick.reSlick();
     //     });
     // },
-  }
+  },
 };
 </script>

@@ -13,9 +13,6 @@
             <b-nav-item :to="{ name: 'CoursePage' }" active-class="active"
               >Coctails</b-nav-item
             >
-            <b-nav-item href="#" active-class="active">Blog</b-nav-item>
-            <b-nav-item href="#" active-class="active">About Us</b-nav-item>
-            <b-nav-item href="#" active-class="active">Contact Us</b-nav-item>
           </b-navbar-nav>
 
           <div class="navbar-buttons">
@@ -25,12 +22,6 @@
               </div>
               <span class="navbar-cart-count">{{ cartCount }}</span>
             </b-button>
-            <b-button class="navbar-button orange-gradient-button"
-              >Be A Contributor</b-button
-            >
-            <b-button class="navbar-button orange-gradient-button"
-              >Log in</b-button
-            >
           </div>
         </b-collapse>
       </b-navbar>
